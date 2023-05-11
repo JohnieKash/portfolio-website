@@ -1,0 +1,120 @@
+.port {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+ 
+  line-height: 1.55;
+
+  font-family: "Montserrat", sans-serif;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+.hobbies{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5em;
+
+}
+.bio-intro{
+  margin-block: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+h4.qoute{
+  font-size: 1.5rem;
+  color:#E5EAED;
+}
+
+
+img.post{
+  width:20%;
+ margin: 0;
+}
+
+.card{
+ background-color: #7fbcf8;
+ padding: 8px;
+
+ border-radius: 12px;
+ border: 1px solid #7fbcf8;
+overflow: auto;
+}
+.tag{
+ margin-top: -32em;
+ padding: 4px 8px;
+ border: 1px solid #E5EAED;
+
+ border-radius: 15px;
+ font-size: 12px;
+ font-weight: 600;
+ color: #646f7d;
+
+ display: inline-block;
+
+}
+
+.name{
+ font-size: 24px;
+ font-weight: 600;
+}
+
+p.about-info{
+ font-size: 14px;
+ color: #646f7d;
+ line-height: 250%;
+}
+.author{
+ text-align: center;
+ color: #646f7d;
+}
+
+blockquote{
+ margin-bottom: 5em;
+ text-align: center;
+ font-weight: 900;
+}
+
+@media screen and (max-width: 480px) {
+  img.post{
+    width: 100%;
+      display: flex;
+     padding: 2em;
+  }
+ 
+}

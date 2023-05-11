@@ -1,0 +1,444 @@
+.port {
+  height: 100vh;
+  width: 100%;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: ;
+  line-height: 1.55;
+  background-color: #e5ddd2;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* header */
+header {
+  height: 10vh;
+}
+header .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3vw;
+}
+
+/* nav ul {
+  display: flex;
+  gap: 3.5rem;
+} */
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+/* contact nav button */
+.btn-c {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.btn-c:after,:before {
+  transition: all .5s;
+}
+.btn-c:hover {
+  color: #555;
+}
+
+
+
+
+/* Main-content */
+main .container {
+  /* width: 85%;
+ margin: 0 auto; */
+  padding-left: 10vw;
+}
+
+main {
+  height: 90vh;
+}
+
+ol.pages {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  counter-set: header 0 nextpage 1;
+}
+
+ol li {
+  height: 100%;
+  display: flex;
+  counter-increment: header;
+}
+
+.left-col,
+.right-col {
+  position: relative;
+  flex: 1;
+}
+.left-col {
+  padding: 10rem 0;
+}
+
+.right-col {
+ padding: 15rem 0;
+}
+
+.right-col {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  /* margin-bottom: 12rem; */
+}
+
+/* header small */
+.container .small {
+  width: 60%;
+  max-width: 35rem;
+}
+
+h1.content-intro {
+ padding: 2px;
+ font-size: 3rem;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 900;
+  color: #7fbcf8;
+}
+
+p {
+  line-height: 2;
+  font-size: 18px;
+  margin-bottom: 8rem;
+}
+
+/* button */
+.btn {
+ font-size: 1.2rem;
+
+
+ display: inline-block;
+ cursor: pointer;
+ color: hsl(317, 100%, 54%);
+ border: 0.125em solid hsl(317, 100%, 54%);
+ padding: 0.25em 1em;
+ border-radius: .55em;
+
+ text-shadow: 0 0 0.45em ;
+
+ box-shadow: inset 0 0 0.5em 0 hsl(317, 100%, 54%),
+ 0 0 0.5em 0 hsl(317, 100%, 54%);
+ position: relative;
+}
+
+.btn::before {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ background: hsl(317, 100%, 54%);
+ top: 120%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+
+ transform: perspective(1em) rotateX(40deg)
+  scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.7;
+}
+
+.btn::after{
+ content: "";
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ box-shadow: 0 0 2em 0.5em  hsl(317, 100%, 54%);
+ opacity: 0;
+ transition: opacity 100ms linear;
+}
+.btn:hover,
+.btn:focus {
+ background: hsl(317, 100%, 54%);
+ color: hsl(322, 21%, 16%) ;
+ text-shadow: none;
+}
+
+/* MY WORK */
+h1.project {
+ font-size: 5em;
+ font-weight: 900;
+ text-transform: capitalize;
+ white-space: nowrap;
+ margin-top: 12rem;
+}
+
+h1.project::after{
+  display: block;
+  font-size: 30px;
+  content: '01. NotePad Ai';
+}
+h1.project2::after{
+  display: block;
+  font-size: 30px;
+  content: '02. Weather App';
+}
+
+.role-responsibility{
+ border-left: 1px solid #646f7d;
+ padding-left: 5em;
+ margin-bottom: 12rem;
+}
+
+p.responsibility{
+ width: 130%;
+  white-space: nowrap;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  margin-bottom: 2em;
+}
+
+.btn-responsibility{
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.btn-responsibility a{
+ color: #7fbcf8;
+ white-space: nowrap;
+}
+
+
+
+
+/* work img */
+.work-img{
+  /* margin-top: 25em; */
+  padding-top: 10rem;
+  width: 100%;
+}
+.work-img2{
+  width: 100%;
+  padding-top: 16rem;
+}
+
+
+/* About Section */
+#container{
+ max-width: 400px;
+ margin: 0 auto;
+
+ margin-top: 20vh;
+}
+
+img.post{
+ margin: 0;
+}
+
+.card{
+ background-color: #7fbcf8;
+ padding: 8px;
+
+ border-radius: 12px;
+ border: 1px solid #7fbcf8;
+overflow: auto;
+}
+.tag{
+ margin-top: -32em;
+ padding: 4px 8px;
+ border: 1px solid #E5EAED;
+
+ border-radius: 15px;
+ font-size: 12px;
+ font-weight: 600;
+ color: #646f7d;
+
+ display: inline-block;
+
+}
+
+.name{
+ font-size: 24px;
+ font-weight: 600;
+}
+
+p.about-info{
+ font-size: 14px;
+ color: #646f7d;
+ line-height: 250%;
+}
+.author{
+ text-align: center;
+ color: #646f7d;
+}
+
+blockquote{
+ margin-bottom: 5em;
+ text-align: center;
+ font-weight: 900;
+}
+
+button.more{
+ border: none;
+ padding: 12px 24px;
+ border-radius: 50px;
+ font-weight: 600;
+ cursor: pointer;
+
+ margin: 0 auto;
+ display: block;
+
+ transition: all 200ms ease-in-out;
+}
+
+.card_details{
+ padding: 16px 8px 0 8px;
+}
+
+
+
+/* form design */
+form input,
+form textarea,
+form button {
+ font-family: 'Poppins', sans-serif;
+ font-size: 18px;
+ line-height: 1.55;
+}
+
+/* container */
+.container{
+ width: 85%;
+ margin: 0 auto;
+}
+
+/* contact */
+.dark{
+ background-color: rgb(60, 58, 71);
+}
+
+.dark label {
+ color: rgba(255, 255, 255, .8);
+}
+
+.name{
+ margin-top: 14rem;
+}
+
+h1.intro {
+ font-size: 8em;
+ font-style: italic;
+ font-weight: 900;
+}
+  
+form div {
+ margin-bottom: 1.75rem;
+}
+
+form label {
+ display: block;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ text-align: start;
+ margin-bottom: .5rem;
+}
+
+form input,
+form textarea {
+ background-color: rgba(255, 255, 255, .8);
+ border: none;
+ padding: 1rem;
+ width: 100%;
+ color: rgb(255, 255, 255);
+ resize: none;
+}
+
+form input:focus,
+form textarea:focus{
+ outline: none;
+ background-color: rgba(255, 255, 255, .5);
+}
+
+.btn.send {
+ text-align: center;
+ margin-bottom: 5rem;
+}
+
+
+
+/* GO TOP BTN */
+.gotopbtn{
+  z-index: 100;
+ position: fixed;
+ width: 35px;
+ bottom: 40px;
+ right: 50px;
+}
+
+
+  @media screen and (min-width: 200px) and (max-width: 1024px) {
+      .work-img{
+      margin-top: 55em;
+      width: 100%;
+      }
+      .work-img2{
+      margin-top: 15rem;
+      width: 100%;
+      }
+      
+
+   }
+
+   
+  /* @media screen and (min-width: 1224px) {
+      .work-img{
+      margin-top: 40em;
+      width: 100%;
+      }
+
+   } */
